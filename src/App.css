@@ -1,33 +1,68 @@
+body {
+  background-color: #282c34;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App > *{
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#url{
+  width: 75%;
+  padding: 10px;
+  font-size: 20px ;
+  border: 1px black;
   }
-  to {
-    transform: rotate(360deg);
+  #title {
+    width: 60%;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    
+    }
+
+  #mybutton{
+    width:15%;
+    height: 50px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 0px;
+    cursor: pointer;
+    background: #dfdfdf;
   }
-}
+
+  .iterate-info {
+    background: white;
+    margin: 20px 40px;
+    font-size: 20px;
+  }
+  .feeds-container {
+    width: 82%;
+    height: 550px;
+  } 
+  @media screen and (max-width: 1024px) {
+    .feeds-container {
+        width: 90%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #url{
+      width: 73%;
+    }
+    #title{
+      width: 40%;
+    }
+    #mybutton{
+      width: 32%;
+    }
+    .feeds-container {
+      width: 100%;
+    }
+  }
